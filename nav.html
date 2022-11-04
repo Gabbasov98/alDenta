@@ -75,58 +75,171 @@
         <a href="service2.html" style="display: block; margin-bottom: 20px;">
             Лечение кариеса
         </a>
-        <a href="" style="display: block; margin-bottom: 20px;">
-
+        <a href="price.html" style="display: block; margin-bottom: 20px;">
+            Цены
         </a>
-        <a href="" style="display: block; margin-bottom: 20px;">
-
+        <a href="doctors2.html" style="display: block; margin-bottom: 20px;">
+            Врачи
         </a>
-        <a href="" style="display: block; margin-bottom: 20px;">
-
+        <a href="doctor.html" style="display: block; margin-bottom: 20px;">
+            Врач
         </a>
-        <a href="" style="display: block; margin-bottom: 20px;">
-
+        <a href="works.html" style="display: block; margin-bottom: 20px;">
+            Работы врачей
         </a>
-        <a href="" style="display: block; margin-bottom: 20px;">
-
+        <a href="feedback.html" style="display: block; margin-bottom: 20px;">
+            Отзывы
         </a>
-        <a href="" style="display: block; margin-bottom: 20px;">
-
+        <a href="sales.html" style="display: block; margin-bottom: 20px;">
+            Акции
         </a>
-        <a href="" style="display: block; margin-bottom: 20px;">
-
+        <a href="sale.html" style="display: block; margin-bottom: 20px;">
+            Акция
         </a>
-        <a href="" style="display: block; margin-bottom: 20px;">
-
+        <a href="for-doctors.html" style="display: block; margin-bottom: 20px;">
+            Врачам
         </a>
-        <a href="" style="display: block; margin-bottom: 20px;">
-
+        <a href="edu.html" style="display: block; margin-bottom: 20px;">
+            Обучение
+        </a>
+        <a href="vacancies.html" style="display: block; margin-bottom: 20px;">
+            Вакансии
+        </a>
+        <a href="vacancy.html" style="display: block; margin-bottom: 20px;">
+            Вакансия
+        </a>
+        <a href="franchise.html" style="display: block; margin-bottom: 20px;">
+            Франшиза
+        </a>
+        <a href="contacts.html" style="display: block; margin-bottom: 20px;">
+            Контакты
+        </a>
+        <a href="404.html" style="display: block; margin-bottom: 20px;">
+            404
+        </a>
+        <a href="conf.html" style="display: block; margin-bottom: 20px;">
+            Политика обработки персональных данных
         </a>
 
 
 
 
-        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#quickOrder">
-            Быстрый заказ
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#callModal">
+            Заказать звонок
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#callModal">
+            Написать отзыв
         </button>
 
     </div>
 
-    <div class="modal" id="quickOrder" aria-hidden="true">
+    <div class="modal fade" id="callModal" aria-hidden="true">
     <div class="modal-dialog">
         <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18" stroke="#1F2123" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 6L18 18" stroke="#1F2123" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </button>
 
-
-
+        <div class="modal__title display4">Заказать звонок</div>
+        <div class="modal__desc">
+            Оставьте нам ваши контактные данные <br> и мы вам перезвоним
+        </div>
+        <form action="" class="modal__form">
+            <fieldset class="fg">
+                <input type="text" placeholder="имя">
+            </fieldset>
+            <fieldset class="fg">
+                <input type="tel" placeholder="телефон">
+            </fieldset>
+            <div class="modal__check mcheck body-text">
+                <input checked type="checkbox">
+                <label>
+                    Даю согласие на обработку персональных данных, соглашаюсь с политикой конфиденциальности
+                </label>
+            </div>
+            <div class="modal__nav">
+                <button class="modal__btn mbtn mbtn-primary">Отправить</button>
+            </div>
+        </form>
     </div>
 </div>
 
+<div class="modal modal-feedback fade" id="feedbackModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18" stroke="#1F2123" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 6L18 18" stroke="#1F2123" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
 
-<!-- <div class="modal-backdrop show"></div> -->
+        <div class="modal__title display4">Написать отзыв</div>
+        <div class="modal__desc">
+            Ваши замечания и пожелания помогают нам улучшать качество и сервис. <br>
+            Напишите, нам, и мы сделаем всё возможное, чтобы стать ещё лучше!
+        </div>
+        <form action="" class="modal__form">
+            <fieldset class="fg">
+                <input type="text" placeholder="имя">
+            </fieldset>
+            <fieldset class="fg modal__group">
+                <label>Оценка:</label>
+                <div class="modal__rating">
+                    <div class="rating" data-total-rating="@@rating" data-rating-code="1">
+                        <div class="rating__item" data-rating-value="5">&#9733;</div>
+<div class="rating__item" data-rating-value="4">&#9733;</div>
+<div class="rating__item" data-rating-value="3">&#9733;</div>
+<div class="rating__item" data-rating-value="2">&#9733;</div>
+<div class="rating__item" data-rating-value="1">&#9733;</div>
+
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="fg">
+                <input type="tel" placeholder="телефон">
+            </fieldset>
+            <fieldset class="fg modal__group">
+                <label>Врач:</label>
+                <select>
+                    <option selected>Иванов И. И.</option>
+                    <option>Иванов И. И. 2</option>
+                    <option>Иванов И. И. 3</option>
+                    <option>Иванов И. И. 4</option>
+                </select>
+            </fieldset>
+            <fieldset class="fg">
+                <input type="email" placeholder="электронная почта">
+            </fieldset>
+            <fieldset class="fg modal__group">
+                <label>Клиника:</label>
+                <select>
+                    <option selected>Иванов И. И.</option>
+                    <option>Иванов И. И. 2</option>
+                    <option>Иванов И. И. 3</option>
+                    <option>Иванов И. И. 4</option>
+                </select>
+            </fieldset>
+            <fieldset class="fg modal__full">
+                <textarea placeholder="текст отзыва"></textarea>
+            </fieldset>
+
+            <div class="modal__nav modal__full">
+                <div class="modal__check mcheck body-text">
+                    <input checked type="checkbox">
+                    <label>
+                        Даю согласие на обработку персональных данных, соглашаюсь с политикой конфиденциальности
+                    </label>
+                </div>
+                <button class="modal__btn mbtn mbtn-primary">Отправить отзыв</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!--<div class="modal-backdrop show"></div>-->
+
     <!--  -->
     <script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
