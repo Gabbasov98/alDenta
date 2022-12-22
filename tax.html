@@ -73,7 +73,7 @@
                 <a href="tel:+73912346421" class="header__phone">+7 (391) 234-64-21</a>
                 <div class="header__buttons">
                     <button class="header__btn mbtn mbtn-primary">Заказать звонок</button>
-                    <button class="header__btn mbtn mbtn-black-outline">Версия для слабовидящих</button>
+                    <button class="_contrast-toggle header__btn mbtn mbtn-black-outline">Версия для слабовидящих</button>
                 </div>
                 <nav class="nav">
                     <div class="container">
@@ -442,22 +442,68 @@
                         <div class="tax-form__subtitle display5 tax-form__15">Справку об оплате мной медицинских услуг, оказанных следующим лицам:</div>
                         <div class="tax-form__checks tax-form__15">
                             <div class="tax-form__check mcheck mcheck--white body-text">
-                                <input checked type="checkbox">
+                                <input checked type="radio" name="who">
                                 <label>мне</label>
                             </div>
                             <div class="tax-form__check mcheck mcheck--white body-text">
-                                <input type="checkbox">
+                                <input type="radio" name="who" value="partner">
                                 <label>моему супругу (е)</label>
                             </div>
                             <div class="tax-form__check mcheck mcheck--white body-text">
-                                <input type="checkbox">
+                                <input type="radio" name="who" value="parents">
                                 <label>моим родителям</label>
                             </div>
                             <div class="tax-form__check mcheck mcheck--white body-text">
-                                <input type="checkbox">
+                                <input type="radio" name="who" value="children">
                                 <label>моим детям</label>
                             </div>
                         </div>
+
+                        <div class="tax-form__inputs" data-id="partner">
+                            <fieldset class="fg fg--white">
+                                <input type="text" placeholder="Имя">
+                            </fieldset>
+                            <fieldset class="fg fg--white">
+                                <input type="text" placeholder="Дата рождения">
+                            </fieldset>
+                        </div>
+
+                        <div class="tax-form__inputs" data-id="parents">
+                            <fieldset class="fg fg--white">
+                                <input type="text" placeholder="Имя">
+                            </fieldset>
+                            <fieldset class="fg fg--white">
+                                <input type="text" placeholder="Дата рождения">
+                            </fieldset>
+                            <fieldset class="fg fg--white">
+                                <input type="text" placeholder="Имя">
+                            </fieldset>
+                            <fieldset class="fg fg--white">
+                                <input type="text" placeholder="Дата рождения">
+                            </fieldset>
+                        </div>
+
+                        <div class="tax-form__inputs" data-id="children">
+                            <fieldset class="fg fg--white">
+                                <input type="text" placeholder="Имя">
+                            </fieldset>
+                            <fieldset class="fg fg--white">
+                                <input type="text" placeholder="Дата рождения">
+                            </fieldset>
+                            <fieldset class="fg fg--white">
+                                <input type="text" placeholder="Имя">
+                            </fieldset>
+                            <fieldset class="fg fg--white">
+                                <input type="text" placeholder="Дата рождения">
+                            </fieldset>
+                            <fieldset class="fg fg--white">
+                                <input type="text" placeholder="Имя">
+                            </fieldset>
+                            <fieldset class="fg fg--white">
+                                <input type="text" placeholder="Дата рождения">
+                            </fieldset>
+                        </div>
+
 
                         <div class="tax-form__subtitle display5 tax-form__15">Прошу выдать следующим способом:</div>
                         <div class="tax-form__checks tax-form__15">
