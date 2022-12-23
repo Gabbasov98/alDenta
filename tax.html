@@ -508,26 +508,39 @@
                         <div class="tax-form__subtitle display5 tax-form__15">Прошу выдать следующим способом:</div>
                         <div class="tax-form__checks tax-form__15">
                             <div class="tax-form__check mcheck mcheck--white body-text">
-                                <input checked type="checkbox">
+                                <input checked type="radio" name="how-get" value="me">
                                 <label>лично мне в клинике</label>
                             </div>
                             <div class="tax-form__check mcheck mcheck--white body-text">
-                                <input type="checkbox">
+                                <input type="radio" name="how-get" value="email">
                                 <label>направить на электронную почту</label>
                             </div>
                             <div class="tax-form__check mcheck mcheck--white body-text">
-                                <input type="checkbox">
+                                <input type="radio" name="how-get" value="home">
                                 <label>направить почтой по адресу</label>
                             </div>
                             <div class="tax-form__check mcheck mcheck--white body-text">
-                                <input type="checkbox">
+                                <input type="radio" name="how-get" value="friend">
                                 <label>я доверяю получить</label>
                             </div>
                         </div>
 
-                        <fieldset class="fg fg--white tax-form__13">
-                            <input type="text" placeholder="Адрес">
-                        </fieldset>
+                        <div class="tax-form__inputs2" data-id="email">
+                            <fieldset class="fg fg--white">
+                                <input type="text" placeholder="E-mail">
+                            </fieldset>
+                        </div>
+                        <div class="tax-form__inputs2" data-id="home">
+                            <fieldset class="fg fg--white">
+                                <input type="text" placeholder="Адрес">
+                            </fieldset>
+                        </div>
+                        <div class="tax-form__inputs2" data-id="friend">
+                            <fieldset class="fg fg--white">
+                                <input type="text" placeholder="ФИО">
+                            </fieldset>
+                        </div>
+
 
                         <div class="tax-form__subtitle display5 tax-form__15">Филиал, в котором проходило лечение:</div>
                         <fieldset class="fg fg--white tax-form__13">
